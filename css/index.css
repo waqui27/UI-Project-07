@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: "Fredoka One", Poppins;
+    
+}
+body {
+    padding: 0 0 30px 50px;
+    
+}
+
+/* navigation bar css */
+.nav-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1.4;
+    padding-left: 120px;
+}
+
+.nav-item {
+    margin: 40px;
+    font-weight:100;
+    font-size: 16px;
+    font-family: Poppins;
+    cursor: pointer;
+}
+
+.active-item  {
+   font-family: "Fredoka One";
+   color: #fe5f34;
+   font-weight: 200;
+   font-size: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+
+nav img:last-child {
+    width: 250px;
+    height: auto;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+nav img:first-child {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+}
+
+/* Intro section */
+
+.intro-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+/* right section */
+
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.headphone-div {
+    display: flex;
+    flex-direction: row;
+}
+
+.headphone-div img:last-child {
+    width: 400px;
+    height: auto;
+    position: relative;
+}
+
+.discount  {
+    position: absolute;
+    width: 130px;
+    z-index: 1;
+    margin-left: -35px;
+    margin-top: 230px;
+
+}
+
+.discount-content {
+    position: absolute;
+    z-index: 2;
+    margin-top: 260px;
+    color: #ffffff;
+}
+
+.discount-content h4 {
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.discount-content h1 {
+    font-size: 45px;
+    font-weight: 400;
+    margin-left: -15px;
+}
+
+.dot {
+    width: 24px;
+    height: 24px;
+    border-radius: 12px 12px 12px 12px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.dots {
+    display: flex;
+}
+
+.yellow-dot {
+    background: #fad105;
+}
+
+.tomato-dot {
+    background: #fe5f34;
+}
+
+.black-dot {
+    background: #010100;
+}
+
+.action-btn {
+    width: 140px;
+    height: 46px;
+    border-radius: 22px 22px 22px 22px;
+    border: none;
+    background: #fe5f34;
+    font-family: Poppins;
+    color: #ffffff;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* left section */
+
+.left-section h3 {
+    font-size: 35px;
+    font-family: Poppins;
+    font-weight: normal;
+    margin-top: 30px;
+}
+
+.left-section h3 img {
+    width: 50px;
+    margin-bottom: -3px;
+}
+
+.left-section h1 {
+    font-size: 68px;
+    width: 55vw;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.sub-headline img {
+    background: #fe5f34;
+    border-radius: 13px 13px 13px 13px;
+    width: 16px;
+    padding: 5px;
+    margin: 10px 15px;
+}
+
+.sub-headline {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 65px;
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: normal;
+}
+
+.text {
+    width: 50vw;
+    color: #babbbb;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-family: Poppins;
+    font-size: 13px;
+}
+
+.action-btn {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+@media (max-width:800px) {
+    .nav-items {
+        display: none;
+    }
+
+    nav img {
+        display: none;
+    }
+
+    nav {
+        margin: 0px;
+    }
+
+    body {
+        padding: 20px 20px 20px 20px;
+    }
+
+    .intro-section {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .right-section {
+        margin-right: 0px;
+        margin-top: 40px;
+    }
+
+    .headphone-div img:last-child {
+        width: 70vw;
+    }
+
+}
+
+@media screen and (min-width:801px) {
+    .menubar {
+        display: none;
+    }
+}
